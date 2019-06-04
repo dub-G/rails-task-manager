@@ -1,0 +1,4 @@
+<% @tasks.each do |task| %>
+<%#= "Task:#{link_to task.title, tasks_path(task)},---Status:#{task.completed}" %>
+<p>Task: <%= link_to task.title, task_path(task) %> Status: <%= task.completed %></p>
+<% end %>
